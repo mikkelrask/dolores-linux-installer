@@ -157,11 +157,11 @@ pacstrap -K -C /etc/pacman.conf /mnt base base-devel archlinux-keyring cachyos-k
     arch-install-scripts efibootmgr grub openssh \
     iwd dhcpcd networkmanager network-manager-applet wpa_supplicant wireless_tools wireless-regdb \
     pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils \
-    mesa vulkan-virtio \
+    mesa egl-wayland vulkan-virtio spice-vdagent \
     greetd greetd-tuigreet mangowm waybar rofi ghostty swaybg swaync swayidle \
     xorg-xwayland xorg-xhost xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs polkit \
     git wget curl tmux fzf yazi stow mpv mpd mpc ffmpeg python bun \
-    man-db man-pages less neovim nano htop btop bat ripgrep fd zoxide jq \
+    man-db man-pages less neovim nano htop btop bat eza ripgrep fd zoxide jq rust \
     unzip p7zip tar rsync reflector netctl dnsutils bind ethtool \
     usbutils pciutils lsof strace lm_sensors smartmontools cpupower power-profiles-daemon \
     qemu-guest-agent \
@@ -326,12 +326,12 @@ pacman -S --noconfirm --needed base-devel
 # Build paru as the user, then install the built package as root.
 su - "${USERNAME}" -c "
     cd /tmp
-    rm -rf paru-bin
-    git clone https://aur.archlinux.org/paru-bin.git
-    cd paru-bin
+    rm -rf paru
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
     makepkg --noconfirm
 "
-pacman -U --noconfirm /tmp/paru-bin/*.pkg.tar.zst
+pacman -U --noconfirm /tmp/paru/*.pkg.tar.zst
 
 # ── Services ─────────────────────────────────────────────────────────────
 echo "Enabling services..."
