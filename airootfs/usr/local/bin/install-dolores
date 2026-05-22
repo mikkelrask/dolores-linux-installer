@@ -157,7 +157,7 @@ pacstrap -K -C /etc/pacman.conf /mnt base base-devel archlinux-keyring cachyos-k
     arch-install-scripts efibootmgr grub openssh \
     iwd dhcpcd networkmanager network-manager-applet wpa_supplicant wireless_tools wireless-regdb \
     pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils \
-    mesa libva-mesa-driver mesa-vdpau vulkan-virtio \
+    mesa vulkan-virtio \
     greetd greetd-tuigreet mangowm waybar rofi ghostty swaybg swaync swayidle \
     xorg-xwayland xorg-xhost xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs polkit \
     git wget curl tmux fzf yazi stow mpv mpd mpc ffmpeg python bun \
