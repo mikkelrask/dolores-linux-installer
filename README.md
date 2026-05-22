@@ -197,3 +197,32 @@ If boot drops into an emergency shell with a failed mount of the real root, the
 live initramfs probably lacks Archiso hooks. Ensure `packages.x86_64` includes
 `mkinitcpio-archiso` and that the preset in `airootfs/etc/mkinitcpio.d/` matches
 the kernel package.
+
+## Mango Keybindings
+
+After install, Dolores boots into Mango (a wlroots Wayland compositor). The
+config lives at `~/.config/mango/config.conf` (stowed from dotfiles). Here are
+the essentials:
+
+| Action | Binding |
+|--------|---------|
+| Terminal | `Alt+Enter` |
+| Browser (LibreWolf) | `Alt+W` |
+| Launcher | `Alt+Space` |
+| Run command | `Alt+D` |
+| Switch tag | `Alt+1` – `Alt+9` |
+| Move window to tag | `Super+Alt+1` – `Super+Alt+9` |
+| Focus window | `Super+h` / `j` / `k` / `l` or `Super+Shift` + arrows |
+| Swap window | `Super+Shift` + `h` / `j` / `k` / `l` or arrows |
+| Toggle floating | `Alt+V` |
+| Toggle maximize | `Alt+A` |
+| Toggle fullscreen | `Alt+F` |
+| Toggle overview | `Alt+Tab` |
+| Cycle layout | `Super+N` |
+| Set tile layout | `Super+T` |
+| Toggle gaps | `Super+A` |
+| Kill focused client | `Alt+Shift+Q` |
+| Reload config | `Ctrl+Shift+R` |
+| Quit Mango | `Ctrl+Shift+X` |
+
+Media keys (`XF86Audio*`) control volume via PulseAudio/PipeWire by default.
