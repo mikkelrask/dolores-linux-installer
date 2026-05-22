@@ -1,0 +1,4 @@
+##
+## CachyOS repository mirrorlist
+##
+Server = https://mirror.cachyos.org/repo/$arch/$repo

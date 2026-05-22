@@ -1,0 +1,133 @@
+# Base system
+base
+base-devel
+arch-install-scripts
+archlinux-keyring
+cachyos-keyring
+opendoas
+zsh
+grml-zsh-config
+openssh
+fastfetch
+gptfdisk
+dosfstools
+mkinitcpio
+mkinitcpio-archiso
+
+# Kernel (CachyOS optimized)
+linux-zen
+linux-zen-headers
+linux-firmware
+
+# Boot
+efibootmgr
+systemd
+syslinux
+
+# Network
+iwd
+dhcpcd
+networkmanager
+network-manager-applet
+wpa_supplicant
+wireless_tools
+wireless-regdb
+
+# Audio
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+alsa-utils
+
+# Display / Wayland
+greetd
+greetd-tuigreet
+mangowm
+waybar
+rofi
+ghostty
+swaybg
+swaync
+swayidle
+xorg-xwayland
+xorg-xhost
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-user-dirs
+polkit
+
+# Utilities
+git
+wget
+curl
+tmux
+fzf
+yazi
+stow
+mpv
+mpd
+mpc
+ffmpeg
+python
+bun
+man-db
+man-pages
+less
+neovim
+nano
+htop
+btop
+bat
+ripgrep
+fd
+zoxide
+jq
+unzip
+p7zip
+tar
+rsync
+reflector
+netctl
+dnsutils
+bind
+ethtool
+usbutils
+pciutils
+lsof
+strace
+lm_sensors
+smartmontools
+cpupower
+power-profiles-daemon
+
+# Fonts
+terminus-font
+ttf-jetbrains-mono
+ttf-cascadia-code-nerd
+ttf-cascadia-mono-nerd
+noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
+noto-fonts-extra
+ttf-font-awesome
+otf-font-awesome
+ttf-nerd-fonts-symbols
+
+# Librewolf (from CachyOS)
+librewolf-bin
+
+# AUR helper (built in install script)
+# paru — installed by the script itself
+
+# Theming / extras
+grim
+slurp
+wl-clipboard
+pavucontrol
+pamixer
+brightnessctl
+playerctl
+rmpc
+beets
